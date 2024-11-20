@@ -7,3 +7,6 @@ vim.g.autoformat = false
 
 -- Set rulers at 80 and 120 characters
 vim.opt.colorcolumn = "80,120"
+
+-- Number of spaces to use for autoindenting
+vim.opt.shiftwidth = 4
