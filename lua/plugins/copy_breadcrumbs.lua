@@ -1,5 +1,6 @@
 return {
-  dir = "~/.config/nvim/lua/plugins/copy_breadcrumbs",
+  dir = "~/.config/nvim/lua/plugins/",
+  name = "copy_breadcrumbs",
   config = function()
     local M = {}
 
