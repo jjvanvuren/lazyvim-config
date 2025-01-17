@@ -39,7 +39,8 @@ return {
         -- Function to recursively search for the symbol under the cursor
         local function find_symbol(symbols)
           for _, symbol in ipairs(symbols) do
-            if symbol.range and symbol.name then
+            -- Only interested in classes, methods and functions
+            if symbol.range and symbol.name and (symbol.kind == 5 or symbol.kind == 6 or symbol.kind == 12) then
               local start = symbol.range.start
               local stop = symbol.range["end"]
 
