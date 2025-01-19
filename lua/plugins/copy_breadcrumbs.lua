@@ -76,6 +76,11 @@ return {
     vim.api.nvim_create_user_command("CopyBreadcrumbs", M.copy_breadcrumbs, {})
 
     -- Set up a keymap
-    vim.keymap.set("n", "<leader>cb", ":CopyBreadcrumbs<CR>", { noremap = true, silent = true })
+    vim.keymap.set(
+      "n",
+      "<leader>cb",
+      ":CopyBreadcrumbs<CR>",
+      { noremap = true, silent = true, desc = "Copy Breadcrumbs" }
+    )
   end,
 }
