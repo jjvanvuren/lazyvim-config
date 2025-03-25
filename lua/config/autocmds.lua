@@ -16,6 +16,15 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "html", "htmldjango" },
+  callback = function()
+    -- Number of spaces to use for autoindenting
+    vim.opt_local.shiftwidth = 4
+    vim.opt_local.tabstop = 4
+  end,
+})
+
 -- Disable auto format for JSON files
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "json" },

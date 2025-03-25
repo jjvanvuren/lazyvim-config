@@ -5,7 +5,7 @@ return {
     require("nvim-listchars").setup({
       save_state = true,
       listchars = {
-        trail = "-",
+        trail = "·",
         tab = "→ ",
         space = "·",
         extends = "⟩",

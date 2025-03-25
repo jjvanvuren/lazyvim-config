@@ -7,8 +7,8 @@ return {
       javascript = { "jshint" },
     }
 
-    -- Auto-run jshint on write
-    vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    -- Auto-run jshint
+    vim.api.nvim_create_autocmd({ "BufReadPost", "BufWritePost" }, {
       callback = function()
         lint.try_lint()
       end,
