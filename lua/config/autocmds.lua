@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "html", "htmldjango" },
+  pattern = { "html", "htmldjango", "scss" },
   callback = function()
     -- Number of spaces to use for autoindenting
     vim.opt_local.shiftwidth = 4
