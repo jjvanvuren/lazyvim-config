@@ -3,3 +3,10 @@
 -- Add any additional options here
 
 vim.opt.list = true
+vim.opt.listchars = {
+  trail = "·",
+  tab = "→ ",
+  space = "·",
+  extends = "⟩",
+  precedes = "⟨",
+}

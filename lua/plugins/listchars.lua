@@ -3,7 +3,7 @@ return {
   event = "BufEnter",
   config = function()
     require("nvim-listchars").setup({
-      save_state = true,
+      save_state = false,
       listchars = {
         trail = "·",
         tab = "→ ",
